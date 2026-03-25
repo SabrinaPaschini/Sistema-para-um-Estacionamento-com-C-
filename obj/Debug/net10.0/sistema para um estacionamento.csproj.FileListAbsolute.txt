@@ -1,0 +1,15 @@
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\bin\Debug\net10.0\sistema para um estacionamento.exe
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\bin\Debug\net10.0\sistema para um estacionamento.deps.json
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\bin\Debug\net10.0\sistema para um estacionamento.runtimeconfig.json
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\bin\Debug\net10.0\sistema para um estacionamento.dll
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\bin\Debug\net10.0\sistema para um estacionamento.pdb
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\sistema para um estacionamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\sistema para um estacionamento.AssemblyInfoInputs.cache
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\sistema para um estacionamento.AssemblyInfo.cs
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\sistema para um estacionamento.csproj.CoreCompileInputs.cache
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\sistema para um estacionamento.sourcelink.json
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\sistema para um estacionamento.dll
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\refint\sistema para um estacionamento.dll
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\sistema para um estacionamento.pdb
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\sistema para um estacionamento.genruntimeconfig.cache
+C:\Users\sabri\Desktop\projetos\sistema para um estacionamento\obj\Debug\net10.0\ref\sistema para um estacionamento.dll
