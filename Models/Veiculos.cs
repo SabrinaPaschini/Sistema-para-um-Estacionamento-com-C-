@@ -5,15 +5,15 @@ using System.Threading.Tasks;
 
 namespace sistema_para_um_estacionamento.Models
 {
-    public class Veiculos
+    public class Carros
     {
-        public string Marca { get; set; }
-        public string Placa { get; set; }
+        public string Model { get; set; }
+        public string LicencePlate { get; set; }
 
-        public Veiculos(string marca, string placa)
+        public Carros(string model, string licencePlate)
         {
-            Marca = marca; 
-            Placa = placa;
+            Model = model; 
+            LicencePlate = licencePlate;
         }
     }
 }

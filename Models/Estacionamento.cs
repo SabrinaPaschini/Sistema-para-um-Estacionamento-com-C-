@@ -10,18 +10,18 @@ namespace sistema_para_um_estacionamento.Models
     {
     public decimal PrecoInicial { get; set; }
     public decimal PrecoPorHora { get; set; }
-    public List<Veiculos> Veiculos { get; set; } = new List<Veiculos>();
+    public List<Carros> Carros { get; set; } = new List<Carros>();
     
-        public Estacionamento(decimal precoInicial, decimal precoPorHora, List<Veiculos> veiculos)
+        public Estacionamento(decimal precoInicial, decimal precoPorHora, List<Carros> carros)
         {
             PrecoInicial = precoInicial;
             PrecoPorHora = precoPorHora; 
-            Veiculos = veiculos; 
+            Carros = carros; 
         }
 
-        public void AdicionaVeiculos(Veiculos veiculo)
+        public void AdicionaVeiculos(Carros carros)
         {
-           Veiculos.Add(veiculo); 
+           Carros.Add(carros); 
         }
 
          public void RemoveVeiculos()
