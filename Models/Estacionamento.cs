@@ -10,33 +10,32 @@ namespace sistema_para_um_estacionamento.Models
     {
     private decimal PrecoInicial { get; set; }
     private decimal PrecoPorHora { get; set; }
-    private List<Carros> Carros { get; set; } = new List<Carros>();
+    private List<string> Veiculos{ get; set; } = new List<string>();
     
-        public Estacionamento(decimal precoInicial, decimal precoPorHora, List<Carros> carros)
+        public Estacionamento(decimal precoInicial, decimal precoPorHora)
         {
             PrecoInicial = precoInicial;
             PrecoPorHora = precoPorHora; 
-            Carros = carros; 
+            
         }
 
-        public void AdicionaVeiculos(Carros carros)
+        public void AdicionarVeiculosEstacionamento(string placa)
         {
-           Carros.Add(carros); 
+            Veiculos.Add(placa); 
         }
 
-         public void RemoveVeiculos()
-        {
-            Console.WriteLine("Removendo veículo....");
-        }
+         public void RemoverVeiculos( string placa)
+         {
+             Veiculos.Remove(placa);
+         }
 
-        public void ListaVeiculo()
-        {
-            Console.WriteLine("Lista de veículos....");
-        }
-    
-        public void Encerrar()
-        {
-            Console.WriteLine("Encerrando..."); 
-        }
+         public void ListarVeiculo()
+         {
+             foreach (var placa in Veiculos)
+             {
+                 Console.WriteLine(placa);
+             }
+         }
+
     }
 }

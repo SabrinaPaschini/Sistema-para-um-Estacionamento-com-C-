@@ -1,19 +1,21 @@
-﻿// instanciar um veiculo 
-
-using sistema_para_um_estacionamento.Models;
-
-
+﻿using sistema_para_um_estacionamento.Models;
 
 Console.WriteLine("insira o modelo do carro:");
 
 string modelo = Console.ReadLine() ?? "";
 
 Console.WriteLine("insira a placa do veiculo:");
+
 string placa = Console.ReadLine() ?? "";
 
-Carros Veiculo1 = new Carros(modelo, placa);
+Veiculo Veiculo1 = new Veiculo(modelo, placa);
 
-Console.WriteLine($"aqui está o modelo cadastrado:{modelo}");
+Console.WriteLine($"Carro no estacionamento:{modelo} Placa: {placa}");
 
-// criar um estacionamento para receber veiculos estacionados 
+var Estacionamento = new Estacionamento(12, 2);
 
+Estacionamento.AdicionarVeiculosEstacionamento(placa);
+
+Estacionamento.RemoverVeiculos("efg-6789");
+
+Estacionamento.ListarVeiculo();
