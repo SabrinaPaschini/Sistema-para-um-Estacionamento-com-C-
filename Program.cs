@@ -1,21 +1,36 @@
 ﻿using sistema_para_um_estacionamento.Models;
 
-Console.WriteLine("insira o modelo do carro:");
+Console.WriteLine("Início do Sistema");
 
-string modelo = Console.ReadLine() ?? "";
+Estacionamento estacionamento = new Estacionamento(12, 2);
 
-Console.WriteLine("insira a placa do veiculo:");
+bool continuar = true;
 
-string placa = Console.ReadLine() ?? "";
+while (continuar)
+{
 
-Veiculo Veiculo1 = new Veiculo(modelo, placa);
+        Console.WriteLine("1 - Cadastrar veículo");
+        Console.WriteLine("2 - Remover veículo");
+        Console.WriteLine("3 - Listar veículos");
+        Console.WriteLine("4 - Encerrar");
 
-Console.WriteLine($"Carro no estacionamento:{modelo} Placa: {placa}");
+        int opcao = Convert.ToInt32(Console.ReadLine());
 
-var Estacionamento = new Estacionamento(12, 2);
-
-Estacionamento.AdicionarVeiculosEstacionamento(placa);
-
-Estacionamento.RemoverVeiculos("efg-6789");
-
-Estacionamento.ListarVeiculo();
+        switch (opcao)
+        {
+                case 1:
+                        estacionamento.AdicionarVeiculosEstacionamento();
+                        break;
+                case 2:
+                        estacionamento.RemoverVeiculos();
+                        break;
+                case 3:
+                        estacionamento.ListarVeiculo();
+                        break;
+                case 4:
+                        continuar = false;
+                        break;
+                default:
+                        Console.WriteLine("Opção invalida!");
+        }
+}
