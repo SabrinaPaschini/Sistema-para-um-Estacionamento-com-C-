@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sistema para um estacionamento")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a402d3296feabc845eefe54c37eec8a085d871bb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe6d168d1acbb3c88121e133b02124fe8531f66a")]
 [assembly: System.Reflection.AssemblyProductAttribute("sistema para um estacionamento")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sistema para um estacionamento")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
