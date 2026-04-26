@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading.Tasks;
 
 namespace sistema_para_um_estacionamento.Models
 {
@@ -23,28 +21,25 @@ namespace sistema_para_um_estacionamento.Models
             Veiculos.Add(placa);
         }
 
-        public void RemoverVeiculos(string placa, int horas)
+        public bool RemoverVeiculos(string placa)
         {
             if (Veiculos.Contains(placa))
             {
-                decimal valorTotal = PrecoInicial * horas;
-
                 Veiculos.Remove(placa);
-                Console.WriteLine($"Veiculo {placa} removido com sucesso!");
-                Console.WriteLine($"Valor a pagar {valorTotal}");
+                return true;
             }
-            else
-            {
-                Console.WriteLine($"Veículo não encontrado.");
-            }
+
+            return false;
         }
 
-        public void ListarVeiculo()
+        public List<string> ListarVeiculo()
         {
-            foreach (var placa in Veiculos)
-            {
-                Console.WriteLine(placa);
-            }
+            return Veiculos;
+        }
+
+        public decimal CalcularValor(int horas)
+        {
+            return PrecoInicial + (PrecoPorHora * horas);
         }
     }
 }
